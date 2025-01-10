@@ -1,3 +1,4 @@
+#English
 ESP32 Wi-Fi Connection Test with LED Indicator
 
 This project is a simple Arduino sketch for the ESP32 that tests the device's connection to a Wi-Fi network and uses an LED indicator to signal the connection status.
@@ -48,3 +49,57 @@ Troubleshooting
     If the LED does not light up, verify the Wi-Fi credentials and ensure your ESP32 is within range of the Wi-Fi network.
     Check the wiring of the LED and resistor to ensure proper connections.
     Use the Serial Monitor to diagnose connection issues.
+
+-x-
+
+#Portuguese
+Teste de Conexão Wi-Fi com ESP32 e Indicador LED
+
+Este projeto é um sketch simples para o ESP32 que testa a conexão do dispositivo a uma rede Wi-Fi e utiliza um LED como indicador de status da conexão.
+Funcionalidades
+
+    Conecta o ESP32 a uma rede Wi-Fi especificada.
+    Acende um LED conectado ao GPIO2 (D2) ao estabelecer uma conexão bem-sucedida.
+    Exibe o endereço IP do dispositivo no monitor serial após a conexão.
+
+Requisitos
+
+    Placa de desenvolvimento ESP32.
+    IDE Arduino com suporte configurado para ESP32.
+    Credenciais de uma rede Wi-Fi (SSID e senha).
+    Um LED e um resistor de 330 ohms conectados ao GPIO2.
+
+Como Funciona
+
+    O ESP32 tenta se conectar à rede Wi-Fi especificada utilizando as credenciais fornecidas no código.
+    Durante o processo de conexão, mensagens de status são exibidas no monitor serial para depuração.
+    Após a conexão:
+        O LED no GPIO2 é aceso para indicar sucesso.
+        O endereço IP do dispositivo é exibido no monitor serial.
+
+Instruções de Configuração
+
+    Clone ou faça o download deste repositório para sua máquina.
+    Abra o arquivo esp32_wifi_led.ino na IDE Arduino.
+    Substitua os placeholders YOUR_SSID e YOUR_PASSWORD pelo nome e senha da sua rede Wi-Fi.
+    Conecte um LED ao GPIO2 com um resistor de 330 ohms em série.
+    Faça o upload do código para o ESP32 usando a IDE Arduino.
+    Abra o Monitor Serial configurado a 115200 baud para visualizar o status da conexão e o IP atribuído.
+
+Montagem do Hardware
+
+    LED: Conecte a perna positiva (ânodo) do LED ao GPIO2 e a perna negativa (cátodo) ao terra através de um resistor de 330 ohms.
+    ESP32: Certifique-se de que está devidamente conectado ao computador via USB para a programação.
+
+Exemplo de Saída
+
+    Conectando ao Wi-Fi...
+    ......
+    Conectado ao Wi-Fi!
+    IP obtido: 192.168.0.102
+
+Solução de Problemas
+
+    Caso o LED não acenda, verifique as credenciais da rede Wi-Fi e assegure-se de que o ESP32 está dentro do alcance do roteador.
+    Verifique a fiação do LED e do resistor para garantir conexões corretas.
+    Use o Monitor Serial para diagnosticar problemas de conexão.
