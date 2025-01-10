@@ -38,10 +38,10 @@ Hardware Setup
 
 Example Output
 
-Conectando ao Wi-Fi...
-......
-Conectado ao Wi-Fi!
-IP obtido: 192.168.0.102
+    Conectando ao Wi-Fi...
+    ......
+    Conectado ao Wi-Fi!
+    IP obtido: 192.168.0.102
 
 Troubleshooting
 
